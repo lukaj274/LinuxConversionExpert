@@ -12,5 +12,23 @@
     <vm:MainViewModel />
   </Design.DataContext>
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+  <StackPanel
+      Orientation="Vertical"
+      Margin="30"
+      Spacing="5">
+      
+      <TextBlock Text="Hello, User" FontSize="20" FontWeight="Bold"/>
+      <TextBlock Text="What would you like to do?" FontSize="20" FontWeight="Bold"/>
+      
+      <StackPanel
+          Orientation="Vertical"
+          HorizontalAlignment="Center"
+          Spacing="20"
+          Margin="0,30">
+          
+          <Button>Choose a Linux Distro</Button>
+          <Button>Learn how to install Linux</Button>
+          <Button>Find software to use</Button>
+      </StackPanel>
+  </StackPanel>
 </UserControl>
