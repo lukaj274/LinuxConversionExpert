@@ -1,0 +1,73 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LinuxConversionExpert.Views.ChooseDistroQuestionsView">
+    
+    <ScrollViewer>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="30"
+            Spacing="20">
+        
+            <TextBlock Text="Please answer these questions:" FontSize="20" FontWeight="Bold"/>
+        
+            <StackPanel
+                Orientation="Vertical"
+                Spacing="5">
+            
+                <TextBlock Text="1. Which best describes your experience with Linux?" FontSize="16"/>
+            
+                <RadioButton GroupName="Q1">I am completely new to Linux.</RadioButton>
+                <RadioButton GroupName="Q1">I am an intermediate Linux user who is comfortable with using the command line.</RadioButton>
+                <RadioButton GroupName="Q1">I am an advanced Linux user. I have tried multiple distros.</RadioButton>
+            </StackPanel>
+        
+            <StackPanel
+                Orientation="Vertical"
+                Spacing="5">
+            
+                <TextBlock Text="2. Have you used macOS or Windows before?" FontSize="16"/>
+            
+                <TextBlock Text="macOS:" FontSize="14" FontStyle="Italic" HorizontalAlignment="Center"/>
+            
+                <RadioButton GroupName="Q2-1">No.</RadioButton>
+                <RadioButton GroupName="Q2-1">Yes, but I never understood how to use it. / Yes, but I didn't like using it.</RadioButton>
+                <RadioButton GroupName="Q2-1">Yes, and I liked using it.</RadioButton>
+                <RadioButton GroupName="Q2-1">Yes, and I am a power user.</RadioButton>
+            
+                <TextBlock Text="Windows:" FontSize="14" FontStyle="Italic" HorizontalAlignment="Center"/>
+            
+                <RadioButton GroupName="Q2-1">No.</RadioButton>
+                <RadioButton GroupName="Q2-1">Yes, but I never understood how to use it. / Yes, but I didn't like using it.</RadioButton>
+                <RadioButton GroupName="Q2-1">Yes, and I liked using it.</RadioButton>
+                <RadioButton GroupName="Q2-1">Yes, and I am a power user.</RadioButton>
+            </StackPanel>
+            
+            <StackPanel
+                Orientation="Vertical"
+                Spacing="5">
+                
+                <TextBlock Text="3. What do use your computer for?"/>
+                
+                <CheckBox>Gaming</CheckBox>
+                <CheckBox>Work or School</CheckBox>
+                <CheckBox>Development</CheckBox>
+                <CheckBox>Research</CheckBox>
+            </StackPanel>
+            
+            <StackPanel
+                Orientation="Vertical"
+                Spacing="5">
+                
+                <TextBlock Text="4. How old is your computer?"/>
+                
+                <RadioButton GroupName="Q4">New</RadioButton>
+                <RadioButton GroupName="Q4">A few years old</RadioButton>
+                <RadioButton GroupName="Q4">More than 5 years old</RadioButton>
+                <RadioButton GroupName="Q4">More than 10 years old</RadioButton>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
