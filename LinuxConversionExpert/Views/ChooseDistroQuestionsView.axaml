@@ -19,9 +19,9 @@
             
                 <TextBlock Text="1. Which best describes your experience with Linux?" FontSize="16"/>
             
-                <RadioButton GroupName="Q1">I am completely new to Linux.</RadioButton>
-                <RadioButton GroupName="Q1">I am an intermediate Linux user who is comfortable with using the command line.</RadioButton>
-                <RadioButton GroupName="Q1">I am an advanced Linux user. I have tried multiple distros.</RadioButton>
+                <RadioButton GroupName="Q1" x:Name="Q1_1">I am completely new to Linux.</RadioButton>
+                <RadioButton GroupName="Q1" x:Name="Q1_2">I am an intermediate Linux user who is comfortable with using the command line.</RadioButton>
+                <RadioButton GroupName="Q1" x:Name="Q1_3">I am an advanced Linux user. I have tried multiple distros.</RadioButton>
             </StackPanel>
         
             <StackPanel
@@ -32,17 +32,17 @@
             
                 <TextBlock Text="macOS:" FontSize="14" FontStyle="Italic" HorizontalAlignment="Center"/>
             
-                <RadioButton GroupName="Q2-1">No.</RadioButton>
-                <RadioButton GroupName="Q2-1">Yes, but I never understood how to use it. / Yes, but I didn't like using it.</RadioButton>
-                <RadioButton GroupName="Q2-1">Yes, and I liked using it.</RadioButton>
-                <RadioButton GroupName="Q2-1">Yes, and I am a power user.</RadioButton>
+                <RadioButton GroupName="Q2-1" x:Name="Q2_1_1">No.</RadioButton>
+                <RadioButton GroupName="Q2-1" x:Name="Q2_1_2">Yes, but I never understood how to use it. / Yes, but I didn't like using it.</RadioButton>
+                <RadioButton GroupName="Q2-1" x:Name="Q2_1_3">Yes, and I liked using it.</RadioButton>
+                <RadioButton GroupName="Q2-1" x:Name="Q2_1_4">Yes, and I am a power user.</RadioButton>
             
                 <TextBlock Text="Windows:" FontSize="14" FontStyle="Italic" HorizontalAlignment="Center"/>
             
-                <RadioButton GroupName="Q2-1">No.</RadioButton>
-                <RadioButton GroupName="Q2-1">Yes, but I never understood how to use it. / Yes, but I didn't like using it.</RadioButton>
-                <RadioButton GroupName="Q2-1">Yes, and I liked using it.</RadioButton>
-                <RadioButton GroupName="Q2-1">Yes, and I am a power user.</RadioButton>
+                <RadioButton GroupName="Q2-2" x:Name="Q2_2_1">No.</RadioButton>
+                <RadioButton GroupName="Q2-2" x:Name="Q2_2_2">Yes, but I never understood how to use it. / Yes, but I didn't like using it.</RadioButton>
+                <RadioButton GroupName="Q2-2" x:Name="Q2_2_3">Yes, and I liked using it.</RadioButton>
+                <RadioButton GroupName="Q2-2" x:Name="Q2_2_4">Yes, and I am a power user.</RadioButton>
             </StackPanel>
             
             <StackPanel
@@ -51,10 +51,10 @@
                 
                 <TextBlock Text="3. What do use your computer for?"/>
                 
-                <CheckBox>Gaming</CheckBox>
-                <CheckBox>Work or School</CheckBox>
-                <CheckBox>Development</CheckBox>
-                <CheckBox>Research</CheckBox>
+                <CheckBox x:Name="Q3_1">Gaming</CheckBox>
+                <CheckBox x:Name="Q3_2">Work or School</CheckBox>
+                <CheckBox x:Name="Q3_3">Development</CheckBox>
+                <CheckBox x:Name="Q3_4">Research</CheckBox>
             </StackPanel>
             
             <StackPanel
@@ -63,11 +63,14 @@
                 
                 <TextBlock Text="4. How old is your computer?"/>
                 
-                <RadioButton GroupName="Q4">New</RadioButton>
-                <RadioButton GroupName="Q4">A few years old</RadioButton>
-                <RadioButton GroupName="Q4">More than 5 years old</RadioButton>
-                <RadioButton GroupName="Q4">More than 10 years old</RadioButton>
+                <RadioButton GroupName="Q4" x:Name="Q4_1">New</RadioButton>
+                <RadioButton GroupName="Q4" x:Name="Q4_2">A few years old</RadioButton>
+                <RadioButton GroupName="Q4" x:Name="Q4_3">More than 5 years old</RadioButton>
+                <RadioButton GroupName="Q4" x:Name="Q4_4">More than 10 years old</RadioButton>
             </StackPanel>
+            <Button Click="Button_OnClick">
+                <TextBlock Text="Continue -->" FontSize="20"/>
+            </Button>
         </StackPanel>
     </ScrollViewer>
 </UserControl>
