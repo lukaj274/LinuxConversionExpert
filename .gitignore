@@ -19,3 +19,5 @@ LinuxConversionExpert.*/bin/
 LinuxConversionExpert.*/obj/
 LinuxConversionExpert/bin/
 LinuxConversionExpert/obj/
+# OpenRouter AI API Key
+key.env

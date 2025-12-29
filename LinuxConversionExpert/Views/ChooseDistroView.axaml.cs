@@ -17,4 +17,9 @@ public partial class ChooseDistroView : UserControl
     {
         this.Content = new ChooseDistroQuestionsView();
     }
+
+    private void Back_OnClick(object? sender, RoutedEventArgs e)
+    {
+        this.Content = new MainView();
+    }
 }

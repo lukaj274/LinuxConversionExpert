@@ -4,17 +4,62 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="LinuxConversionExpert.Views.ChooseDistroView">
-    <StackPanel
-        Orientation="Vertical"
-        Margin="30"
-        Spacing="50">
+    <ScrollViewer>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="30"
+            Spacing="50">
+            
+            <Button Click="Back_OnClick">Back</Button>
         
-        <TextBlock Text="Find the perfect distro for you by filling out this form" FontSize="20" FontWeight="Bold"/>
+            <TextBlock Text="Find the perfect distro for you by filling out this form" FontSize="20" FontWeight="Bold"/>
         
-        <Button Click="FindDistro_OnClick">
-            <TextBlock Text="Continue -->" FontSize="20"/>
-        </Button>
+            <Button Click="FindDistro_OnClick">
+                <TextBlock Text="Continue -->" FontSize="20"/>
+            </Button>
         
-        <TextBlock Text="Or give my recommendations a try:" FontSize="20" FontWeight="Bold"/>
-    </StackPanel>
+            <TextBlock Text="Or give my recommendations a try:" FontSize="20" FontWeight="Bold"/>
+        
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Zorin OS" FontSize="18" FontWeight="Bold"/>
+                <HyperlinkButton>https://zorin.com/os/</HyperlinkButton>
+                <Image Source="/Assets/zorin-os.jpg"/>
+                <Label>- Beginner Friendly</Label>
+                <Label>- Open Source</Label>
+                <Label>- Good for Windows users</Label>
+                <Label>- GNOME desktop environment, customized to look like Windows</Label>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Kubuntu" FontSize="18" FontWeight="Bold"/>
+                <HyperlinkButton>https://kubuntu.org/</HyperlinkButton>
+                <Image Source="/Assets/kubuntu2.png"/>
+                <Label>- Beginner Friendly</Label>
+                <Label>- Open Source</Label>
+                <Label>- KDE Plasma desktop environment, highly customizable and beginner friendly</Label>
+                <Label>- Professional Support</Label>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Linux Mint" FontSize="18" FontWeight="Bold"/>
+                <HyperlinkButton>https://www.linuxmint.com/</HyperlinkButton>
+                <Image Source="/Assets/linux-mint.jpg"/>
+                <Label>- Beginner Friendly</Label>
+                <Label>- Open Source</Label>
+                <Label>- Cinnamon desktop environment</Label>
+                <Label>- Large community available</Label>
+                <Label>- Recommended by a lot of websites for current Windows users</Label>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Ubuntu" FontSize="18" FontWeight="Bold"/>
+                <HyperlinkButton>https://www.ubuntu.com/</HyperlinkButton>
+                <Image Source="/Assets/ubuntu.jpg"/>
+                <Label>- Beginner Friendly</Label>
+                <Label>- Open Source</Label>
+                <Label>- Company-owned, professional support available</Label>
+                <Label>- GNOME desktop environment</Label>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
 </UserControl>

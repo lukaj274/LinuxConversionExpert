@@ -24,7 +24,7 @@ public partial class ChooseDistroQuestionsView : UserControl
 
     public string Prompt => _prompt;
 
-    private void Button_OnClick(object? sender, RoutedEventArgs e)
+    private async void Button_OnClick(object? sender, RoutedEventArgs e)
     {
         // Check the answer to the first question
         if ((bool)Q1_1.IsChecked)
@@ -115,5 +115,6 @@ public partial class ChooseDistroQuestionsView : UserControl
         // Generate a prompt
         var generator = new PromptGenerator();
         _prompt = generator.GeneratePrompt(ExperienceLevel, MacExperience, WindowsExperience, Usages, Age);
+        await generator.GetAiResults(_prompt);
     }
 }
