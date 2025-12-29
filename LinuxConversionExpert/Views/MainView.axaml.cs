@@ -20,4 +20,9 @@ public partial class MainView : UserControl
     {
         this.Content = new FindSoftwareView();
     }
+
+    private void LearnButton_OnClick(object? sender, RoutedEventArgs e)
+    {
+        this.Content = new NotCurrentlyAvailableView(this);
+    }
 }

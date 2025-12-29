@@ -10,6 +10,8 @@
             Orientation="Vertical"
             Margin="30"
             Spacing="20">
+            
+            <Button Click="Back_OnClick">Back</Button>
         
             <TextBlock Text="Please answer these questions:" FontSize="20" FontWeight="Bold"/>
         

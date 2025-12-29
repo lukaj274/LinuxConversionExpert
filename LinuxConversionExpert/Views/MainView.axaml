@@ -17,18 +17,18 @@
       Margin="30"
       Spacing="5">
       
-      <TextBlock Text="Hello, User" FontSize="20" FontWeight="Bold"/>
-      <TextBlock Text="What would you like to do?" FontSize="20" FontWeight="Bold"/>
+      <TextBlock Text="Hello," FontSize="20" FontWeight="Bold"/>
+      <TextBlock Text="What would you like to do today?" FontSize="20" FontWeight="Bold"/>
       
       <StackPanel
           Orientation="Vertical"
           HorizontalAlignment="Stretch"
-          VerticalAlignment="Stretch"
+          VerticalAlignment="Center"
           Spacing="20"
-          Margin="0,30">
+          Margin="0, 70">
           
           <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="ChooseDistroButton_OnClick" FontSize="18">Choose a Linux Distro</Button>
-          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontSize="18">Learn how to install Linux</Button>
+          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="LearnButton_OnClick" FontSize="18">Learn how to install Linux</Button>
           <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="FindSoftwareButton_OnClick" FontSize="18">Find software to use</Button>
       </StackPanel>
   </StackPanel>

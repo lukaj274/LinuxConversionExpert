@@ -26,6 +26,7 @@ public partial class ChooseDistroQuestionsView : UserControl
 
     private async void Button_OnClick(object? sender, RoutedEventArgs e)
     {
+        
         // Check the answer to the first question
         if ((bool)Q1_1.IsChecked)
         {
@@ -115,6 +116,14 @@ public partial class ChooseDistroQuestionsView : UserControl
         // Generate a prompt
         var generator = new PromptGenerator();
         _prompt = generator.GeneratePrompt(ExperienceLevel, MacExperience, WindowsExperience, Usages, Age);
-        await generator.GetAiResults(_prompt);
+        
+        // Open a dialog with a message
+        this.Content = new NotCurrentlyAvailableView(this);
+        //await generator.GetAiResults(_prompt);
+    }
+
+    private void Back_OnClick(object? sender, RoutedEventArgs e)
+    {
+        this.Content = new ChooseDistroView();
     }
 }
