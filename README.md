@@ -25,4 +25,4 @@ Linux Conversion Expert is a multiplatform, free, and open-source application de
 Linux Conversion Expert is fully free and open-source (BSD 3-Clause License)
 
 ## Note
-If compiling from source, you will need your own OpenRouter API key
+Currently the app can only suggest distros without using AI
