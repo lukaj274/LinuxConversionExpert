@@ -1,0 +1,53 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LinuxConversionExpert.Views.FindSoftwareView">
+    <ScrollViewer>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="30"
+            Spacing="30">
+            
+            <Button Click="Back_OnClick">Back</Button>
+            
+            <TextBlock FontSize="20" FontWeight="Bold">My recommended applications for Linux:</TextBlock>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">LibreOffice - free alternative to Microsoft 365</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://www.libreoffice.org/</HyperlinkButton>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">VLC Media Player</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://www.videolan.org/vlc/index.html</HyperlinkButton>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Timeshift - system backups made easy</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://github.com/linuxmint/timeshift</HyperlinkButton>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">OBS studio - screen recording app</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://obsproject.com/</HyperlinkButton>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Stacer - easy to use system optimizer</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://oguzhaninan.github.io/Stacer-Web/</HyperlinkButton>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Bleachbit - system cleaner</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://www.bleachbit.org/</HyperlinkButton>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">VS Code - one of the best code editors</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://code.visualstudio.com/</HyperlinkButton>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

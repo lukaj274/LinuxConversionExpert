@@ -15,4 +15,9 @@ public partial class MainView : UserControl
     {
         this.Content = new ChooseDistroView();
     }
+
+    private void FindSoftwareButton_OnClick(object? sender, RoutedEventArgs e)
+    {
+        this.Content = new FindSoftwareView();
+    }
 }
