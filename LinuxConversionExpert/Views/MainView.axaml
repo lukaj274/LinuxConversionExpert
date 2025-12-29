@@ -22,13 +22,14 @@
       
       <StackPanel
           Orientation="Vertical"
-          HorizontalAlignment="Center"
+          HorizontalAlignment="Stretch"
+          VerticalAlignment="Stretch"
           Spacing="20"
           Margin="0,30">
           
-          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="ChooseDistroButton_OnClick">Choose a Linux Distro</Button>
-          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center">Learn how to install Linux</Button>
-          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="FindSoftwareButton_OnClick">Find software to use</Button>
+          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="ChooseDistroButton_OnClick" FontSize="18">Choose a Linux Distro</Button>
+          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" FontSize="18">Learn how to install Linux</Button>
+          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="FindSoftwareButton_OnClick" FontSize="18">Find software to use</Button>
       </StackPanel>
   </StackPanel>
 </UserControl>
