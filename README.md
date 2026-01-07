@@ -21,8 +21,7 @@ Linux Conversion Expert is a multiplatform, free, and open-source application de
 - Avalonia
 - OpenRouter (for AI integration)
 
-##
-How much will Linux Conversion Expert cost to use?
+## How much will Linux Conversion Expert cost to use?
 Linux Conversion Expert is fully free and open-source (BSD 3-Clause License)
 
 ## Note
