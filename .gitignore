@@ -14,6 +14,7 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 .idea/
+.vs/
 # Build directories
 LinuxConversionExpert.*/bin/
 LinuxConversionExpert.*/obj/
