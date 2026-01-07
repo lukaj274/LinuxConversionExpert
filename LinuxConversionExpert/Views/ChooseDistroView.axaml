@@ -21,8 +21,8 @@
             <TextBlock Text="Or give my recommendations a try:" FontSize="20" FontWeight="Bold"/>
         
             <StackPanel Orientation="Vertical" Spacing="5">
-                <TextBlock Text="Zorin OS" FontSize="18" FontWeight="Bold"/>
-                <HyperlinkButton Background="LightGray" FontSize="14">https://zorin.com/os/</HyperlinkButton>
+               <TextBlock Text="Zorin OS" FontSize="18" FontWeight="Bold"/>
+                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://zorin.com/os/"/>
                 <Image Source="/Assets/zorin-os.jpg"/>
                 <Label FontSize="15">- Beginner Friendly</Label>
                 <Label FontSize="15">- Open Source</Label>
@@ -32,7 +32,7 @@
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock Text="Kubuntu" FontSize="18" FontWeight="Bold"/>
-                <HyperlinkButton Background="LightGray" FontSize="14">https://kubuntu.org/</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://kubuntu.org/"/>
                 <Image Source="/Assets/kubuntu2.png"/>
                 <Label FontSize="15">- Beginner Friendly</Label>
                 <Label FontSize="15">- Open Source</Label>
@@ -42,7 +42,7 @@
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock Text="Linux Mint" FontSize="18" FontWeight="Bold"/>
-                <HyperlinkButton Background="LightGray" FontSize="14">https://www.linuxmint.com/</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://www.linuxmint.com/"/>
                 <Image Source="/Assets/linux-mint.jpg"/>
                 <Label FontSize="15">- Beginner Friendly</Label>
                 <Label FontSize="15">- Open Source</Label>
@@ -53,7 +53,7 @@
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock Text="Ubuntu" FontSize="18" FontWeight="Bold"/>
-                <HyperlinkButton Background="LightGray" FontSize="14">https://www.ubuntu.com/</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://ubuntu.com/desktop/"/>
                 <Image Source="/Assets/ubuntu.jpg"/>
                 <Label FontSize="15">- Beginner Friendly</Label>
                 <Label FontSize="15">- Open Source</Label>
