@@ -118,12 +118,12 @@ public partial class ChooseDistroQuestionsView : UserControl
         _prompt = generator.GeneratePrompt(ExperienceLevel, MacExperience, WindowsExperience, Usages, Age);
         
         // Open a dialog with a message
-        this.Content = new NotCurrentlyAvailableView(this);
+        Content = new NotCurrentlyAvailableView(this);
         //await generator.GetAiResults(_prompt);
     }
 
     private void Back_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = new ChooseDistroView();
+        Content = new ChooseDistroView(this);
     }
 }

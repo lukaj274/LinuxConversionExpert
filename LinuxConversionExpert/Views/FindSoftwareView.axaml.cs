@@ -14,6 +14,6 @@ public partial class FindSoftwareView : UserControl
 
     private void Back_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = new MainView();
+        Content = new MainView();
     }
 }

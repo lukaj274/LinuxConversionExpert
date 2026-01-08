@@ -10,6 +10,7 @@ public partial class NotCurrentlyAvailableView : UserControl
 {
     private UserControl Caller;
     private Type type;
+    
     public NotCurrentlyAvailableView(UserControl caller)
     {
         type = caller.GetType();
@@ -18,6 +19,6 @@ public partial class NotCurrentlyAvailableView : UserControl
 
     private void Back_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = Activator.CreateInstance(type);
+        Content = Activator.CreateInstance(type);
     }
 }

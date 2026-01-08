@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
@@ -8,18 +9,21 @@ namespace LinuxConversionExpert.Views;
 
 public partial class ChooseDistroView : UserControl
 {
-    public ChooseDistroView()
+    private Type type;
+    
+    public ChooseDistroView(UserControl caller)
     {
+        type = caller.GetType();
         InitializeComponent();
     }
     
     private void FindDistro_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = new ChooseDistroQuestionsView();
+        Content = new ChooseDistroQuestionsView();
     }
 
     private void Back_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = new MainView();
+        Content = Activator.CreateInstance(type);
     }
 }

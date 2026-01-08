@@ -13,16 +13,16 @@ public partial class MainView : UserControl
 
     private void ChooseDistroButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = new ChooseDistroView();
+        Content = new ChooseDistroView(this);
     }
 
     private void FindSoftwareButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = new FindSoftwareView();
+        Content = new FindSoftwareView();
     }
 
     private void LearnButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = new InstallDistroView();
+        Content = new InstallDistroView();
     }
 }
