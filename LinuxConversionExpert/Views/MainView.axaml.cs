@@ -23,6 +23,6 @@ public partial class MainView : UserControl
 
     private void LearnButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        this.Content = new NotCurrentlyAvailableView(this);
+        this.Content = new InstallDistroView();
     }
 }
