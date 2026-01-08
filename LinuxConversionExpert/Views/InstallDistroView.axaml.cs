@@ -41,4 +41,9 @@ public partial class InstallDistroView : UserControl
     {
         
     }
+
+    private void Back_OnClick(object? sender, RoutedEventArgs e)
+    {
+        Content = new MainView();
+    }
 }
