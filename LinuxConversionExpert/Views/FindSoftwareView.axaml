@@ -16,37 +16,37 @@
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">LibreOffice - free alternative to Microsoft 365</TextBlock>
-                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://www.libreoffice.org/</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://www.libreoffice.org/"/>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">VLC Media Player</TextBlock>
-                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://www.videolan.org/vlc/index.html</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://www.videolan.org/vlc/index.html"/>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">Timeshift - system backups made easy</TextBlock>
-                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://github.com/linuxmint/timeshift</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://github.com/linuxmint/timeshift"/>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">OBS studio - screen recording app</TextBlock>
-                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://obsproject.com/</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://obsproject.com/"/>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">Stacer - easy to use system optimizer</TextBlock>
-                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://oguzhaninan.github.io/Stacer-Web/</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://oguzhaninan.github.io/Stacer-Web/"/>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">Bleachbit - system cleaner</TextBlock>
-                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://www.bleachbit.org/</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://www.bleachbit.org/"/>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">VS Code - one of the best code editors</TextBlock>
-                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center">https://code.visualstudio.com/</HyperlinkButton>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://code.visualstudio.com/"/>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
