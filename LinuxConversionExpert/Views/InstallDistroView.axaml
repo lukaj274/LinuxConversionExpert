@@ -33,41 +33,45 @@
                     <TextBlock Text="I'm not sure yet" FontSize="20"/>
                 </Button>
                 
-                <Button Grid.Row="1" Grid.Column="0"
+                <HyperlinkButton Grid.Row="1" Grid.Column="0"
                         VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
-                        Click="ZorinOS_OnClick">
+                        Background="LightGray"
+                        Click="ZorinOS_OnClick" NavigateUri="https://help.zorin.com/docs/getting-started/install-zorin-os/">
                 
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="Zorin OS" FontSize="20"/>
                     </StackPanel>
-                </Button>
+                </HyperlinkButton>
             
-                <Button Grid.Row="1" Grid.Column="1"
+                <HyperlinkButton Grid.Row="1" Grid.Column="1"
                         VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
-                        Click="Kubuntu_OnClick">
+                        Background="LightGray"
+                        Click="Kubuntu_OnClick" NavigateUri="https://linuxmind.dev/2025/09/02/how-to-install-the-operating-system-kubuntu/">
                 
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="Kubuntu" FontSize="20"/>
                     </StackPanel>
-                </Button>
+                </HyperlinkButton>
             
-                <Button Grid.Row="2" Grid.Column="0"
+                <HyperlinkButton Grid.Row="2" Grid.Column="0"
                         VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
-                        Click="Mint_OnClick">
+                        Background="LightGray"
+                        Click="Mint_OnClick" NavigateUri="https://linuxmint-installation-guide.readthedocs.io/en/latest/index.html">
                 
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="Linux Mint" FontSize="20"/>
                     </StackPanel>
-                </Button>
+                </HyperlinkButton>
             
-                <Button Grid.Row="2" Grid.Column="1"
+                <HyperlinkButton Grid.Row="2" Grid.Column="1"
                         VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
-                        Click="Ubuntu_OnClick">
+                        Background="LightGray"
+                        Click="Ubuntu_OnClick" NavigateUri="https://documentation.ubuntu.com/desktop/en/latest/tutorial/install-ubuntu-desktop/">
                 
                     <StackPanel Orientation="Vertical">
                         <TextBlock Text="Ubuntu" FontSize="20"/>
                     </StackPanel>
-                </Button>
+                </HyperlinkButton>
                 
                 <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
                         Click="DifferentDistro_OnClick">
