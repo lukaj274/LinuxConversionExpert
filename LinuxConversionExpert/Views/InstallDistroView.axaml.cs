@@ -14,7 +14,10 @@ public partial class InstallDistroView : UserControl
 
     private void UnsureDistro_OnClick(object? sender, RoutedEventArgs e)
     {
-        Content = new ChooseDistroView();
+        // Reset the padding and switch to the ChooseDistroView page
+        var distroView = new ChooseDistroView(this);
+        Padding = distroView.Padding;
+        Content = distroView;
     }
 
     private void ZorinOS_OnClick(object? sender, RoutedEventArgs e)
