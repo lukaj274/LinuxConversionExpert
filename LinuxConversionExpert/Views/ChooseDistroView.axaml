@@ -22,7 +22,13 @@
         
             <StackPanel Orientation="Vertical" Spacing="5">
                <TextBlock Text="Zorin OS" FontSize="18" FontWeight="Bold"/>
-                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://zorin.com/os/"/>
+               
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://zorin.com/os/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/start/zorin-18-core64/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Install" NavigateUri="https://help.zorin.com/docs/getting-started/install-zorin-os/"/>
+                </StackPanel>
+               
                 <Image Source="/Assets/zorin-os.jpg"/>
                 <Label FontSize="15">- Beginner Friendly</Label>
                 <Label FontSize="15">- Open Source</Label>
@@ -32,7 +38,13 @@
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock Text="Kubuntu" FontSize="18" FontWeight="Bold"/>
-                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://kubuntu.org/"/>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://kubuntu.org/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/start/kubuntu-25.10-default/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Install" NavigateUri="https://linuxmind.dev/2025/09/02/how-to-install-the-operating-system-kubuntu/"/>
+                </StackPanel>
+                
                 <Image Source="/Assets/kubuntu2.png"/>
                 <Label FontSize="15">- Beginner Friendly</Label>
                 <Label FontSize="15">- Open Source</Label>
@@ -42,7 +54,13 @@
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock Text="Linux Mint" FontSize="18" FontWeight="Bold"/>
-                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://www.linuxmint.com/"/>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://www.linuxmint.com/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/start/linuxmint-22.2-cinnamon/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Install" NavigateUri="https://linuxmint-installation-guide.readthedocs.io/en/latest/index.html"/>
+                </StackPanel>
+                
                 <Image Source="/Assets/linux-mint.jpg"/>
                 <Label FontSize="15">- Beginner Friendly</Label>
                 <Label FontSize="15">- Open Source</Label>
@@ -53,7 +71,13 @@
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock Text="Ubuntu" FontSize="18" FontWeight="Bold"/>
-                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://ubuntu.com/desktop/"/>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://ubuntu.com/desktop/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/start/ubuntu-25.10-default/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Install" NavigateUri="https://documentation.ubuntu.com/desktop/en/latest/tutorial/install-ubuntu-desktop/"/>
+                </StackPanel>
+                
                 <Image Source="/Assets/ubuntu.jpg"/>
                 <Label FontSize="15">- Beginner Friendly</Label>
                 <Label FontSize="15">- Open Source</Label>

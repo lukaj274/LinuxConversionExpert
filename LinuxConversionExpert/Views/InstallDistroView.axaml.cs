@@ -42,7 +42,10 @@ public partial class InstallDistroView : UserControl
 
     private void DifferentDistro_OnClick(object? sender, RoutedEventArgs e)
     {
-        
+        // Resset the padding and switch to the InstallOtherDistroView page
+        var otherDistroView = new InstallOtherDistroView();
+        Padding = otherDistroView.Padding;
+        Content = otherDistroView;
     }
 
     private void Back_OnClick(object? sender, RoutedEventArgs e)
