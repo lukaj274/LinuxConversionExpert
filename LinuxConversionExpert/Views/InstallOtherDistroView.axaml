@@ -1,0 +1,97 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LinuxConversionExpert.Views.InstallOtherDistroView">
+    
+    <Grid RowDefinitions="Auto, *">
+        <StackPanel Orientation="Vertical" Spacing="50" Margin="30">
+            <Button Click="Back_OnClick">Back</Button>
+        
+            <StackPanel Orientation="Vertical" Spacing="10">
+                <TextBlock Text="IMPORTANT! Back up your files before continuing" FontSize="20" FontWeight="Bold"/>
+                <TextBlock TextWrapping="Wrap" Text="While following these steps isn't supposed to delete your stuff, there are lots of things that could go wrong during the installation process."/>
+            </StackPanel>
+        </StackPanel>
+        
+        <Panel Grid.Row="1" Margin="30">
+            <TabControl Grid.Row="1" Margin="5">
+                <TabItem Header="Windows Computers">
+                    <Grid>
+                        <ScrollViewer>
+                            <StackPanel Orientation="Vertical" Spacing="20">
+                                <TextBlock Text="Installation:" FontSize="18" FontWeight="Bold"/>
+                                <TextBlock TextWrapping="Wrap" Text="This video explains the process of installing a Linux distro on a Windows computer. Although the person uses Linux Mint, steps are similar on most distros."/>
+                                <HyperlinkButton NavigateUri="https://www.youtube.com/watch?v=mbgWdI6Cfqo" Background="LightGray">Video</HyperlinkButton>
+                            
+                                <TextBlock Text="Tips for installation:" FontSize="18" FontWeight="Bold"/>
+                            
+                                <TextBlock TextWrapping="Wrap">- Do not choose options marked as <Italic>replace Windows with Linux</Italic> or <Italic>install Linux instead of Windows</Italic>, as these WILL delete all of your files</TextBlock>
+                                <TextBlock TextWrapping="Wrap">- If given a choice of desktop environments, choose something described as a Full Desktop Environment like GNOME or KDE, not something described as a Window Manager or Compositor</TextBlock>
+                                <TextBlock TextWrapping="Wrap">- If available, choose options such as <Italic>Full Installation</Italic> or <Italic>Install Recommended Packages</Italic></TextBlock>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+                
+                <TabItem Header="Mac Computers">
+                    <Grid>
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <StackPanel Orientation="Vertical" Spacing="20">
+                                <TextBlock Text="Important information:" FontSize="18" FontWeight="Bold"/>
+                                <TextBlock TextWrapping="Wrap" Text="Installing Linux on your Mac computer will be a very different experience depending on how old your computer is. For a better understanding, I have divided Mac computers into three classes:"/>
+                                
+                                <TextBlock Text="- Old Macs (Most devices made before 2018)"/>
+                                <TextBlock Text="- T2 Macs (Most devices made in 2017-2020)"/>
+                                <TextBlock Text="- Apple Silicon Macs (Most devices made after 2020)"/>
+                                
+                                <TextBlock Text="General installation tips:" FontSize="18" FontWeight="Bold"/>
+                                
+                                <TextBlock TextWrapping="Wrap">- Do not remove your installation of macOS, it will be really hard to reinstall if you change your mind</TextBlock>
+                                <TextBlock TextWrapping="Wrap">- Choose options marked as <Italic>Full Installation</Italic> of <Italic>Install Recommended Packages</Italic></TextBlock>
+                                <TextBlock TextWrapping="Wrap">- After installation, you might need to install additional drivers for Mac hardware</TextBlock>
+                                <TextBlock TextWrapping="Wrap">- If using a distro's documentation for instructions, see if there is a page with special instructions for your type of Mac</TextBlock>
+                                
+                                <TextBlock Text="How to find out which type of Mac you have:" FontSize="18" FontWeight="Bold"/>
+                                
+                                <TextBlock TextWrapping="Wrap">1. Click on the Apple logo in the top left corner of the screen and click <Italic>About this Mac</Italic></TextBlock>
+                                <TextBlock TextWrapping="Wrap">2. On the window that shows up, look at the <Italic>Processor</Italic> field. If it doesn't have the word <Italic>Intel</Italic> anywhere in the name, then you have an Apple Silicon Mac.</TextBlock>
+                                <TextBlock TextWrapping="Wrap">3. If you don't have an Apple Silicon Mac, then click <Italic>More Info...</Italic> and click <Italic>System Report</Italic></TextBlock>
+                                <TextBlock TextWrapping="Wrap">4. Click on the <Italic>Controller</Italic> section in the window that appears. If the <Italic>Model Name</Italic> field says <Italic>Apple T2 Security Chip</Italic>, then you have a T2 Mac. If the <Italic>Controller</Italic> section says something else, or doesn't exist, then you have an Old Mac.</TextBlock>
+                                
+                                <TextBlock Text="Old Macs:" FontSize="18" FontWeight="Bold"/>
+                                
+                                <TextBlock Text="This video covers the process of installing Linux on a Mac computer. Zorin OS is used, but the steps are similar on most distros" TextWrapping="Wrap"/>
+                                <HyperlinkButton NavigateUri="https://www.youtube.com/watch?v=GcdhJfe3aP8" Background="LightGray">Video</HyperlinkButton>
+                                
+                                <TextBlock Text="T2 Macs:" FontSize="18" FontWeight="Bold"/>
+                                
+                                <TextBlock Text="I personally have experience installing Linux on a T2 Mac, and here are the resources that I used:" TextWrapping="Wrap"/>
+                                <TextBlock Text="- T2Linux is a project made to help people install Linux on their T2 Macs, providing instructions and custom installers. I suggest using an installer obtained from the T2Linux website, as it requires the least work to use." TextWrapping="Wrap"/>
+                                <TextBlock Text="- I used this installation guide to help me, its author used Ubuntu, but I was able to use this guide with Zorin OS." TextWrapping="Wrap"/>
+                                
+                                <StackPanel Orientation="Horizontal" Spacing="10">
+                                    <HyperlinkButton Background="LightGray" NavigateUri="https://t2linux.org/">T2Linux</HyperlinkButton>
+                                    <HyperlinkButton Background="LightGray" NavigateUri="https://www.makeuseof.com/tag/install-linux-macbook-pro/">Installation Guide</HyperlinkButton>
+                                </StackPanel>
+                                
+                                <TextBlock Text="Apple Silicon Macs" FontSize="18" FontWeight="Bold"/>
+                                
+                                <TextBlock Text="- Asahi Linux is one of the only projects aiming to bring Linux to Apple Silicon Macs" TextWrapping="Wrap"/>
+                                <TextBlock Text="- It is actively being developed, so before installing make sure to look at their documentation for what devices are currently supported" TextWrapping="Wrap"/>
+                                <TextBlock Text="- However, you can use the Virtual Machine app UTM to simulate almost any Linux distro with full support. I suggest using this option as it's perfectly safe." TextWrapping="Wrap"/>
+                                
+                                <StackPanel Orientation="Horizontal" Spacing="10">
+                                    <HyperlinkButton Background="LightGray" NavigateUri="https://asahilinux.org/">Asahi Linux</HyperlinkButton>
+                                    <HyperlinkButton Background="LightGray" NavigateUri="https://asahilinux.org/fedora/#device-support">Asahi Linux device support page</HyperlinkButton>
+                                    <HyperlinkButton Background="LightGray" NavigateUri="https://mac.getutm.app/">UTM</HyperlinkButton>
+                                </StackPanel>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Panel>
+    </Grid>
+</UserControl>
