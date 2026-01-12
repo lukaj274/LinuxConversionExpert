@@ -12,6 +12,16 @@ public partial class InstallOtherDistroView : UserControl
         InitializeComponent();
     }
 
+    public InstallOtherDistroView(string os)
+    {
+        InitializeComponent();
+
+        if (os == "mac")
+        {
+            Tabs.SelectedIndex = 1;
+        }
+    }
+
     private void Back_OnClick(object? sender, RoutedEventArgs e)
     {
         // Reset the padding and switch to the InstallDistroView page

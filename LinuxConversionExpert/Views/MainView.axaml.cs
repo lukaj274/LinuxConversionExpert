@@ -25,4 +25,9 @@ public partial class MainView : UserControl
     {
         Content = new InstallDistroView();
     }
+
+    private void MacInstallationHelpButton_OnClick(object? sender, RoutedEventArgs e)
+    {
+        Content = new InstallOtherDistroView("mac");
+    }
 }
