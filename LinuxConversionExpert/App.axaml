@@ -11,11 +11,8 @@
 
     <Application.Styles>
         <FluentTheme />
-    </Application.Styles>
-             
-    <Application.Resources>
         <Style Selector="TextBlock">
             <Setter Property="TextWrapping" Value="Wrap"/>
         </Style>
-    </Application.Resources>
+    </Application.Styles>
 </Application>
