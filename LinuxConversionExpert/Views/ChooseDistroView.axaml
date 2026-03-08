@@ -117,6 +117,22 @@
                         </StackPanel>
                     </TabItem>
                 </TabControl>
+                
+                <StackPanel Orientation="Vertical" Spacing="5">
+                    <TextBlock Text="CachyOS" FontSize="18" FontWeight="Bold"/>
+                
+                    <StackPanel Orientation="Horizontal" Spacing="10">
+                        <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://cachyos.org/"/>
+                        <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/select/cachyos/"/>
+                        <HyperlinkButton Background="LightGray" FontSize="14" Content="Install" NavigateUri="https://youtu.be/mVXONaHZvFU"/>
+                    </StackPanel>
+                
+                    <Image Source="/Assets/cachyos.jpg"/>
+                    <Label FontSize="15">FOR INTERMEDIATE OR ADVANCED USERS ONLY</Label>
+                    <Label FontSize="15">- Open Source</Label>
+                    <Label FontSize="15">- Specialized kernels, runs faster than other distros</Label>
+                    <Label FontSize="15">- Choice of KDE, GNOME, XFCE, Cinnamon, i3, and more desktop environments</Label>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
