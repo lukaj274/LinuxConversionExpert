@@ -78,6 +78,46 @@
                 <Label FontSize="15">- Company-owned, professional support available</Label>
                 <Label FontSize="15">- GNOME desktop environment</Label>
             </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock Text="Fedora KDE and Workstation" FontSize="18" FontWeight="Bold"/>
+                
+                <TabControl>
+                    <TabItem Header="Fedora KDE">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://www.fedoraproject.org/kde/"/>
+                                <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/start/fedora-43-kde/"/>
+                                <HyperlinkButton Background="LightGray" FontSize="14" Content="Install" NavigateUri="https://youtu.be/7PSe1RKfFWY"/>
+                            </StackPanel>
+                
+                            <Label FontSize="15">This install guide can be used with a Fedora KDE iso or a Fedora Workstation one, to install either version</Label>
+                            <Image Source="/Assets/fedora_kde.jpeg"/>
+                            <Label FontSize="15">- Great for Beginner and Intermediate users</Label>
+                            <Label FontSize="15">- Open Source</Label>
+                            <Label FontSize="15">- Large community</Label>
+                            <Label FontSize="15">- KDE Plasma desktop environment</Label>
+                        </StackPanel>
+                    </TabItem>
+                    
+                    <TabItem Header="Fedora Workstation (GNOME)">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://www.fedoraproject.org/workstation/"/>
+                                <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/start/fedora-43-workstation/"/>
+                                <HyperlinkButton Background="LightGray" FontSize="14" Content="Install" NavigateUri="https://youtu.be/7PSe1RKfFWY"/>
+                            </StackPanel>
+                
+                            <Label FontSize="15">This install guide can be used with a Fedora KDE iso or a Fedora Workstation one, to install either version</Label>
+                            <Image Source="/Assets/fedora_workstation.png"/>
+                            <Label FontSize="15">- Great for Beginner and Intermediate users</Label>
+                            <Label FontSize="15">- Open Source</Label>
+                            <Label FontSize="15">- Large community</Label>
+                            <Label FontSize="15">- GNOME desktop environment</Label>
+                        </StackPanel>
+                    </TabItem>
+                </TabControl>
+            </StackPanel>
         </StackPanel>
     </ScrollViewer>
 </UserControl>
