@@ -30,3 +30,6 @@ The question should be: Why not Linux?
 ## How much will Linux Conversion Expert cost to use?
 
 Linux Conversion Expert is fully free and open-source (BSD 3-Clause License)
+
+## DISCLAIMER:
+This project references external images, videos, and articles that were not provided by me.
