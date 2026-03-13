@@ -1,0 +1,62 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LinuxConversionExpert.Views.AdvancedDistroView">
+    <ScrollViewer>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="30"
+            Spacing="50">
+            
+            <Button Click="Back_OnClick">Back</Button>
+            
+            <TextBlock Text="Advanced distros:" FontSize="25" FontWeight="Bold"/>
+            <TextBlock Text="NOTE: As these are for advanced users, unless installation instructions are provided, it is expected that you know how to install them" FontSize="20" FontWeight="Bold" TextWrapping="WrapWithOverflow"/>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock Text="CachyOS" FontSize="18" FontWeight="Bold"/>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://cachyos.org/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/select/cachyos/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Install" NavigateUri="https://youtu.be/mVXONaHZvFU"/>
+                </StackPanel>
+                
+                <Image Source="/Assets/cachyos.jpg"/>
+                <Label FontSize="15">- Open Source</Label>
+                <Label FontSize="15">- Specialized kernels, runs faster than other distros</Label>
+                <Label FontSize="15">- Choice of KDE, GNOME, XFCE, Cinnamon, i3, and more desktop environments</Label>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock Text="Arch Linux" FontSize="18" FontWeight="Bold"/>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://archlinux.org/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/select/archlinux/"/>
+                </StackPanel>
+                
+                <Image Source="/Assets/arch.png"/>
+                <Label FontSize="15">- Complete control of the system</Label>
+                <Label FontSize="15">- Endless customizability</Label>
+                <Label FontSize="15">- Absolutely no bloatware by default</Label>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock Text="NixOS" FontSize="18" FontWeight="Bold"/>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Website" NavigateUri="https://nixos.org/"/>
+                    <HyperlinkButton Background="LightGray" FontSize="14" Content="Try online" NavigateUri="https://distrosea.com/select/nixos/"/>
+                </StackPanel>
+                
+                <Image Source="/Assets/nix_os_gnome.png"/>
+                <Label FontSize="15">- Immutable distro</Label>
+                <Label FontSize="15">- Impossible to break or get a virus on</Label>
+                <Label FontSize="15">- Packages are isolated from each other</Label>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

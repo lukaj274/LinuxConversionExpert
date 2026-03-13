@@ -13,7 +13,7 @@ public partial class MainView : UserControl
 
     private void ChooseDistroButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        Content = new ChooseDistroView(this);
+        Content = new AskExperienceView();
     }
 
     private void FindSoftwareButton_OnClick(object? sender, RoutedEventArgs e)

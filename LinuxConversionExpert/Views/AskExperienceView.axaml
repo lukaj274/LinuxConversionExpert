@@ -1,0 +1,54 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LinuxConversionExpert.Views.AskExperienceView">
+    
+    <StackPanel Orientation="Vertical" Spacing="50" Margin="30">
+        <Button Click="Back_OnClick">Back</Button>
+        
+        <StackPanel Spacing="50">
+            <TextBlock Text="How much experience with Linux do you have?" FontSize="20" FontWeight="Bold"/>
+            
+            <Grid ColumnSpacing="10" RowSpacing="10"
+                  HorizontalAlignment="Center"
+                  Margin="50">
+            
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+            
+                <Button Grid.Row="0"  HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                        Click="Beginner_OnClick">
+                    
+                    <TextBlock Text="Beginner or no experience" FontSize="20"/>
+                </Button>
+                
+                <Button Grid.Row="1"
+                        VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                        Click="Intermediate_OnClick">
+                
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Intermediate" FontSize="20"/>
+                    </StackPanel>
+                </Button>
+            
+                <Button Grid.Row="2"
+                        VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                        Click="Advanced_OnClick">
+                
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Advanced" FontSize="20"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
