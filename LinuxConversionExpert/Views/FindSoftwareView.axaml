@@ -48,6 +48,16 @@
                 <TextBlock FontSize="18" FontWeight="Bold">VS Code - one of the best code editors</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://code.visualstudio.com/"/>
             </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Thunderbird - open-source email client</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://www.thunderbird.net/en-US/"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Transmission - best torrent manager</TextBlock>
+                <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://transmissionbt.com/"/>
+            </StackPanel>
         </StackPanel>
     </ScrollViewer>
 </UserControl>
