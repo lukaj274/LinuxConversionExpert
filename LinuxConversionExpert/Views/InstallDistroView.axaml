@@ -20,6 +20,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
             
                 <Grid.ColumnDefinitions>
@@ -73,7 +74,27 @@
                     </StackPanel>
                 </HyperlinkButton>
                 
-                <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                <HyperlinkButton Grid.Row="3" Grid.Column="0"
+                                 VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                                 Background="LightGray"
+                                 Click="Ubuntu_OnClick" NavigateUri="https://youtu.be/7PSe1RKfFWY">
+                
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Fedora (KDE or Workstation)" FontSize="20"/>
+                    </StackPanel>
+                </HyperlinkButton>
+                
+                <HyperlinkButton Grid.Row="3" Grid.Column="1"
+                                 VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+                                 Background="LightGray"
+                                 Click="Ubuntu_OnClick" NavigateUri="https://youtu.be/mVXONaHZvFU">
+                
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="CachyOS" FontSize="20"/>
+                    </StackPanel>
+                </HyperlinkButton>
+                
+                <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
                         Click="DifferentDistro_OnClick">
                     
                     <TextBlock Text="I want to install a different distro" FontSize="20"/>
