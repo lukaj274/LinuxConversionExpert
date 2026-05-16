@@ -17,7 +17,7 @@
       Margin="30"
       Spacing="5">
       
-      <Image Source="/Assets/LinuxConversionExpertText.png"></Image>
+      <Image Source="/Assets/LinuxConversionExpertText.png" Stretch="Uniform"></Image>
       
       <StackPanel
           Orientation="Vertical"
@@ -32,6 +32,6 @@
           <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="MacInstallationHelpButton_OnClick" FontSize="18">View specific information for Mac computers</Button>
       </StackPanel>
 
-      <Image Source="/Assets/LinuxConversionExpertLogo.png" HorizontalAlignment="Right"></Image>
+      <Image Source="/Assets/LinuxConversionExpertLogo.png" HorizontalAlignment="Right" Stretch="None"></Image>
   </StackPanel>
 </UserControl>
