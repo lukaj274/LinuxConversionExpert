@@ -17,8 +17,7 @@
       Margin="30"
       Spacing="5">
       
-      <TextBlock Text="Hello," FontSize="20" FontWeight="Bold"/>
-      <TextBlock Text="What would you like to do today?" FontSize="20" FontWeight="Bold"/>
+      <Image Source="/Assets/LinuxConversionExpertText.png"></Image>
       
       <StackPanel
           Orientation="Vertical"
@@ -32,5 +31,7 @@
           <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="FindSoftwareButton_OnClick" FontSize="18">Find software to use</Button>
           <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="MacInstallationHelpButton_OnClick" FontSize="18">View specific information for Mac computers</Button>
       </StackPanel>
+
+      <Image Source="/Assets/LinuxConversionExpertLogo.png" HorizontalAlignment="Right"></Image>
   </StackPanel>
 </UserControl>
