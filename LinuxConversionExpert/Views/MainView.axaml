@@ -32,6 +32,7 @@
           <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="MacInstallationHelpButton_OnClick" FontSize="18">View specific information for Mac computers</Button>
       </StackPanel>
 
-      <Image Source="/Assets/LinuxConversionExpertLogo.png" HorizontalAlignment="Right" Stretch="None"></Image>
+      <Image Source="/Assets/LinuxConversionExpertLogo.png" HorizontalAlignment="Right" Stretch="Uniform"
+      Height="408" Width="612" />
   </StackPanel>
 </UserControl>
