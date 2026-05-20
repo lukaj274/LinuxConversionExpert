@@ -1,4 +1,4 @@
-﻿namespace LinuxConversionExpert.Views;
+﻿namespace LinuxConversionExpert;
 
 public enum ExperienceLevel
 {
