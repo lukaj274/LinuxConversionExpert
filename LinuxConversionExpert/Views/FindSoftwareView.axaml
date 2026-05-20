@@ -17,46 +17,55 @@
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">LibreOffice - free alternative to Microsoft 365</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://www.libreoffice.org/"/>
+                <TextBlock TextWrapping="Wrap">LibreOffice is a free office suite that has most of the same features as Microsoft 365. It includes apps for documents, spreadsheets, presentations, and math.</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">VLC Media Player</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://www.videolan.org/vlc/index.html"/>
+                <TextBlock TextWrapping="Wrap">VLC Media Player is the best media player avaliable for not just Linux, but also Mac and Windows. It supports physical formats like CDs, DVDs, and BlueRays, and digital formats like .mp4 and .mkv. It even supports ripping DVDs to make backups.</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">Timeshift - system backups made easy</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://github.com/linuxmint/timeshift"/>
+                <TextBlock TextWrapping="Wrap">Timeshift is a backup tool made by the team at Linux Mint, one of the recommended distros for beginners.</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">OBS studio - screen recording app</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://obsproject.com/"/>
+                <TextBlock TextWrapping="Wrap">OBS Studio is an app for screen recording and live streaming. It has advanced features like multiple scenes.</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">Stacer - easy to use system optimizer</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://oguzhaninan.github.io/Stacer-Web/"/>
+                <TextBlock TextWrapping="Wrap">Stacer is an app to optimize the system. It keeps track of startup apps, installed packages, current processes, and more.</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">Bleachbit - system cleaner</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://www.bleachbit.org/"/>
+                <TextBlock TextWrapping="Wrap">Bleachbit manages extra space used by the system and applications, including caches. It can easily find that extra few GBs of storage.</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">VS Code - one of the best code editors</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://code.visualstudio.com/"/>
+                <TextBlock TextWrapping="Wrap">Visual Studio Code is one of the best code editors available for free. It supports most coding languages, including C#, Java, Python, HTML, Javascript, and Lua. There are extensions available for VS Code that give it features similar to on a full IDE.</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">Thunderbird - open-source email client</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://www.thunderbird.net/en-US/"/>
+                <TextBlock TextWrapping="Wrap">Thunderbird is an open-soure email client made by Mozilla, the same team that made Firefox. It has a clean interface and has privacy features like not loading remote images by default.</TextBlock>
             </StackPanel>
             
             <StackPanel Orientation="Vertical" Spacing="5">
                 <TextBlock FontSize="18" FontWeight="Bold">Transmission - best torrent manager</TextBlock>
                 <HyperlinkButton Background="LightGray" FontSize="14" HorizontalAlignment="Center" Content="Website" NavigateUri="https://transmissionbt.com/"/>
+                <TextBlock TextWrapping="Wrap">Transmission is a torrent manager available on Linux. It has an easy to use interface and works with most torrent files and magnet links.</TextBlock>
             </StackPanel>
         </StackPanel>
     </ScrollViewer>
