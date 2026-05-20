@@ -1,0 +1,123 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LinuxConversionExpert.Views.InstallSoftwareView">
+    
+    <ScrollViewer>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="30"
+            Spacing="30">
+            
+            <Button>Back</Button>
+            
+            <TextBlock FontSize="20" FontWeight="Bold">How to install apps on Linux:</TextBlock>
+            
+            <TextBlock TextWrapping="Wrap">There are multiple formats for apps on Linux. The most used ones are Flatpaks, Snaps, Appimages, Distro packages, and Compiled Binaries.</TextBlock>
+            
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Flatpak</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">Most distros come with support for flatpaks by default. The store on your distro can be used to install them.</TextBlock>
+                <TextBlock TextWrapping="Wrap">Simply search your store for the app that you are looking for, and it should show up.</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Pros:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">+ Easy to install, available on store</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Run in containers with limited system access</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Proprietary (not open source) apps like Slack are available</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Less issues with dependencies than other formats because of containers</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Cons:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">- Sometimes unofficial wrappers of an app, not always verified by developers</TextBlock>
+                <TextBlock TextWrapping="Wrap">- Run slower and take up more space than other formats because of container overhead</TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Snap</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">Snaps were made by the team at Cannonical, the people that made Ubuntu.</TextBlock>
+                <TextBlock TextWrapping="Wrap">Because of this, Ubuntu and most Ubuntu based distros come with support for Snaps pre-installed.</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Pros:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">+ Easy to install, available on store</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Run in containers with limited system access</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Proprietary (not open source) apps like Slack are available</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Less issues with dependencies than other formats because of containers</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Auto updating</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Cons:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">- Sometimes unofficial wrappers of an app, not always verified by developers</TextBlock>
+                <TextBlock TextWrapping="Wrap">- Slowest form of running apps, take up a lot more space than other apps</TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Appimage</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">Appimages are self contained linux applications that come bundled with dependencies.</TextBlock>
+                <TextBlock TextWrapping="Wrap">Most distros come with support for Appimages.</TextBlock>
+                <TextBlock TextWrapping="Wrap">While they can be executed from the download directory, apps like Gear Lever can be used to "install" them, adding them to the app menu.</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Pros:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">+ Common format</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Single self-contained file, bundled with dependencies</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Can be integrated with the system using Gear Lever</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Easy removal</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Cons:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">- Slightly longer startup times than native packages</TextBlock>
+                <TextBlock TextWrapping="Wrap">- No complete system for managing updates</TextBlock>
+                <TextBlock TextWrapping="Wrap">- Not available on app menu by default "(without Gear Lever)"</TextBlock>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Distro Packages</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">All Linux distros have package repositories where apps can be installed.</TextBlock>
+                <TextBlock TextWrapping="Wrap">These repositiories mostly contain open-source applications and system tools.</TextBlock>
+                <TextBlock TextWrapping="Wrap">While packages can be installed from the command line, graphical stores like GNOME Software and KDE Discover can be used to install and manage these packages.</TextBlock>
+                <TextBlock TextWrapping="Wrap">Packages in this format can also be found online from official sources.</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Pros:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">+ Common format</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Packages can easily be installed from stores and the command line</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ Most developers produce, always verified</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ No containers, run at native speeds</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Cons:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">- Repositories mostly only contain open-source applications</TextBlock>
+                <TextBlock TextWrapping="Wrap">- Apps can have full system access</TextBlock>
+                <TextBlock TextWrapping="Wrap">- Possible conflicts with dependencies</TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock FontSize="18" FontWeight="Bold">Compiled Binaries</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">A Compiled Binary is an application compiled for your system, but not packaged in any way. Usually these come in the form of .tar.gz archives that contain the executables.</TextBlock>
+                <TextBlock TextWrapping="Wrap">Any Linux distro can run a binary compiled for its architecture, usually x86_64 or arm64 provided that its dependencies are already installed.</TextBlock>
+                <TextBlock TextWrapping="Wrap">However, these dependencies are not automatically installed. If they aren't available, then the app won't start.</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Pros:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">+ Available on all distros</TextBlock>
+                <TextBlock TextWrapping="Wrap">+ No containers, run at native speeds</TextBlock>
+                
+                <TextBlock FontSize="14" FontWeight="Bold">Cons:</TextBlock>
+                
+                <TextBlock TextWrapping="Wrap">- No automatic dependency resolution</TextBlock>
+                <TextBlock TextWrapping="Wrap">- Apps can have full system access</TextBlock>
+                <TextBlock TextWrapping="Wrap">- No automatic installing or updating</TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
