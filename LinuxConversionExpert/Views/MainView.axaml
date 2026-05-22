@@ -26,9 +26,9 @@
           Spacing="20"
           Margin="0, 70">
           
-          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="ChooseDistroButton_OnClick" FontSize="18">Choose a Linux Distro</Button>
-          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="LearnButton_OnClick" FontSize="18">Learn how to install Linux</Button>
-          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="FindSoftwareButton_OnClick" FontSize="18">Find software to use</Button>
+          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="ChooseDistroButton_OnClick" FontSize="18">My Recommendations</Button>
+          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="LearnButton_OnClick" FontSize="18">Tutorials</Button>
+          <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="FindSoftwareButton_OnClick" FontSize="18">Troubleshooting</Button>
           <Button VerticalAlignment="Stretch" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Click="MacInstallationHelpButton_OnClick" FontSize="18">View specific information for Mac computers</Button>
       </StackPanel>
 

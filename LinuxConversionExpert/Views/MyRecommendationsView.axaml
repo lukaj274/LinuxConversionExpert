@@ -1,0 +1,41 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LinuxConversionExpert.Views.MyRecommendationsView">
+    
+    <ScrollViewer>
+        <StackPanel
+            Orientation="Vertical"
+            Margin="30"
+            Spacing="50">
+            
+            <Button Click="Back_OnClick">Back</Button>
+            
+            <TabControl>
+                <TabItem Header="Distros">
+                    <!--UserControl x:Name="Distros" />-->
+                    
+                    <TabControl>
+                        <TabItem Header="Beginner">
+                            <UserControl x:Name="BeginnerDistros" />
+                        </TabItem>
+                        
+                        <TabItem Header="Intermediate">
+                            <UserControl x:Name="IntermediateDistros" />
+                        </TabItem>
+                        
+                        <TabItem Header="Advanced">
+                            <UserControl x:Name="AdvancedDistros" />
+                        </TabItem>
+                    </TabControl>
+                </TabItem>
+                
+                <TabItem Header="Software">
+                    <UserControl x:Name="Software" />
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
