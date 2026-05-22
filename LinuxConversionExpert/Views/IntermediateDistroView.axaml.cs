@@ -11,9 +11,4 @@ public partial class IntermediateDistroView : UserControl
     {
         InitializeComponent();
     }
-    
-    private void Back_OnClick(object? sender, RoutedEventArgs e)
-    {
-        Content = new AskExperienceView();
-    }
 }

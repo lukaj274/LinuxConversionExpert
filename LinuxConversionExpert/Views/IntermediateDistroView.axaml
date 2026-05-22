@@ -10,8 +10,6 @@
             Margin="30"
             Spacing="50">
             
-            <Button Click="Back_OnClick">Back</Button>
-            
             <TextBlock Text="Intermediate distros:" FontSize="25" FontWeight="Bold"/>
         
             <StackPanel Orientation="Vertical" Spacing="5">
